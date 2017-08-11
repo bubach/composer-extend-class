@@ -1,0 +1,24 @@
+{
+    "name": "bubach/composer-extend-class",
+    "type": "composer-plugin",
+    "description": "Composer plugin for extending any package class",
+    "keywords": ["Composer", "extending", "class"],
+    "authors": [
+        {
+            "name": "Christoffer Bubach",
+            "email": "christoffer.bubach@gmail.com"
+        }
+    ],
+    "require": {
+        "composer-plugin-api": "^1.0"
+    },
+    "autoload": {
+        "psr-4": { "ComposerExtendClass\\": "src/" }
+    },
+    "extra": {
+        "class": [
+            "ComposerExtendClass\\Plugin"
+        ]
+    },
+    "prefer-stable": true
+}
